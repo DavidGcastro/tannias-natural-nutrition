@@ -13,7 +13,7 @@ var concat = require('gulp-concat');
 //all my watch tasks
 gulp.task('watch', function () {
     watch('./app/index.html', function () {
-        gulp.start('copyhtml');
+         console.log('HTML change detected')
     });
 
 
@@ -50,7 +50,7 @@ gulp.task('styles', function () {
 
     return gulp.src('./app/styles/source.css')
         .pipe(postcss(postcss_stuff))
-        .pipe(gulp.dest('./dist/styles/'));
+        .pipe(gulp.dest('./app/styles/temp/'));
 
 });
 
@@ -59,7 +59,7 @@ gulp.task('styles', function () {
 gulp.task('imagemin', () =>
     gulp.src('./app/images/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('temp/images'))
 );
 
 
@@ -70,7 +70,7 @@ gulp.task('scripts', function(){
     return gulp.src('./app/js/scripts/*js')
     .pipe(concat('main.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
+    .pipe(gulp.dest('./app/js/'));
 })
 
 gulp.task('default', ['copyhtml', 'styles', 'imagemin', 'scripts']);
