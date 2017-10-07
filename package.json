@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -22,6 +23,7 @@
     "install": "^0.10.1",
     "npm": "^5.4.2",
     "postcss-import": "^11.0.0",
+    "postcss-mixins": "^6.1.1",
     "postcss-nested": "^2.1.2",
     "postcss-simple-vars": "^4.1.0"
   }

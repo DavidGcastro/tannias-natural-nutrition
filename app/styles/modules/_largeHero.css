@@ -1,0 +1,129 @@
+.large-hero {
+    position: relative;
+    max-width: 100%;
+
+    &-logo {
+
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        height: 40px;
+        top: 5%;
+        
+
+        @mixin atSmall {
+            height: 70px;
+        }
+
+        @mixin atMedium {
+            height: 80px;
+        }
+        @mixin atLarge {
+            height: 90px;
+        }
+    }
+    &-background {
+        width: 100%;
+    }
+    &-title {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-weight: 300;
+        color: $green;
+        font-size: 1rem;
+        font-weight: 400;
+        @mixin atSmall {
+            font-size: 1.25rem;
+            font-weight: 400;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+        @mixin atMedium {
+            font-size: 1.85rem;
+            font-weight: 300;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+        @mixin atLarge {
+            font-size: 3rem;
+            font-weight: 300;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            ;
+        }
+    }
+    &-subtitle {
+        color: $reg;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        font-size: .875em;
+        @mixin atSmall {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        @mixin atMedium {
+            font-size: 1.35rem;
+            font-weight: 300;
+        }
+        @mixin atLarge {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+    &-text-container {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-57%);
+        text-align: center;
+        padding: 0 20px;
+        right: 0;
+        left: 0;
+
+        @mixin atSmall {
+            margin: 0;
+            padding: 0 50px;
+            transform: translateY(-40%);
+        }
+        @mixin atMedium {
+            padding: 0 70px;
+            transform: translateY(-90%);
+        }
+        @mixin atLarge {
+            transform: translateY(-125%);
+
+
+        }
+    }
+
+    &-background {
+        display: block;
+    }
+}
+
+#icon-center {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    font-size:1rem;
+    color: white;
+    
+         @mixin atSmall {
+             font-size:1.5rem;
+
+            
+        }
+        @mixin atMedium {
+     
+        }
+        @mixin atLarge {
+            font-size: 3rem;
+
+
+        }
+
+}

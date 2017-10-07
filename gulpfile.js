@@ -9,23 +9,49 @@ var simpleVars = require('postcss-simple-vars');
 var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var browserSync = require('browser-sync').create();
+var mixins = require('postcss-mixins');
+
+
 
 //all my watch tasks
 gulp.task('watch', function () {
+    browserSync.init({
+        //where should i go?
+        server: {
+            baseDir: 'app'
+        }
+
+    });
+
+
     watch('./app/index.html', function () {
-         console.log('HTML change detected')
+        console.log('HTML change detected')
+        browserSync.reload();
     });
 
 
     watch('./app/styles/modules/*.css', function () {
-        gulp.start('styles');
+        gulp.start('cssInject');
     });
-    
-    
-    watch('./app/js/scripts/*js', function(){
+
+
+    watch('./app/js/scripts/*js', function () {
         gulp.start('scripts');
+         browserSync.reload();
     });
 });
+
+
+
+//browsersync styles, styles is dependency so it will run and complete first
+
+gulp.task('cssInject',['styles'], function(){
+   return gulp.src('./app/styles/temp/source.css')
+    .pipe(browserSync.stream());
+});
+
+
 
 
 //copy html to dist
@@ -41,6 +67,7 @@ gulp.task('copyhtml', function () {
 gulp.task('styles', function () {
     var postcss_stuff = [
        cssImport,
+       mixins,
        nested,
        autoprefixer,
        cssnano,
@@ -51,7 +78,6 @@ gulp.task('styles', function () {
     return gulp.src('./app/styles/source.css')
         .pipe(postcss(postcss_stuff))
         .pipe(gulp.dest('./app/styles/temp/'));
-
 });
 
 
@@ -66,11 +92,11 @@ gulp.task('imagemin', () =>
 
 //combine  and minify js
 
-gulp.task('scripts', function(){
+gulp.task('scripts', function () {
     return gulp.src('./app/js/scripts/*js')
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./app/js/'));
+        .pipe(concat('main.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./app/js/'));
 })
 
 gulp.task('default', ['copyhtml', 'styles', 'imagemin', 'scripts']);
