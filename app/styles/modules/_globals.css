@@ -1,14 +1,59 @@
 html {
-   max-width: 1400px;
+
+    max-width: 100%;
     margin: 0 auto;
-    width: 100%;
 }
 
 
-body{
+
+body {
+
+    width: 100%;
+
+    a {
+        text-decoration: none;
+        color: $reg;
+
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+
     width: 100%;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',
+    sans-serif;
 
 }
 
+.container {
+ 
+     @mixin atSmall {
+        margin: 0;
+    }
+
+
+    @mixin atMedium {
+       margin:0 15px;
+    }
+    
+    @mixin atLarge{
+        margin: 0 120px;
+    }
+}
+
+
+.icon-wrapper {
+    padding-right: 3px;
+    
+    @mixin atMedium{
+        font-size: 1.5rem;
+    }
+    @mixin atLarge{
+        font-size: 1.2rem;
+ 
+    }
+}

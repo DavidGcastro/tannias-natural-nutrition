@@ -1,1 +1,1 @@
-var changeWord=document.getElementsByClassName("changeWord"),words=["SERENITY","TRANQUILITY","HAPPINESS","RELAXATION"],counter=0;setInterval(function(){counter==words.length?counter=0:(changeWord[0].addClass="animate",changeWord[0].innerHTML=words[counter],counter++)},5e3);
+function change(){changeWord[0].innerHTML=words[counter],++counter>=words.length&&(counter=0)}var changeWord=document.getElementsByClassName("changeWord"),words=[" SERENITY"," TRANQUILITY"," HAPPINESS"," RELAXATION"],counter=0;setInterval(change,5e3);

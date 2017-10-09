@@ -1,0 +1,55 @@
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    &--green {
+        background: $green;
+
+    }
+
+
+    &--thin {
+
+
+        @mixin atMedium {
+            padding: 20px;
+            border-radius: 20%;
+            color: white;
+
+        }
+
+        @mixin atLarge {
+            padding: 15px;
+            font-weight: bold;
+            font-size: .875rem;
+            border-radius: 10px;
+            
+        }
+
+
+
+
+
+
+        &:hover {
+            background: white;
+            border: 2px solid $green;
+            color: $green;
+            border: 2px solid $green;
+            transition: all .2s ease-out;
+
+        }
+    }
+
+    &--text {
+        @mixin atMedium {
+            visibility: hidden;
+            display: none;
+        }
+        @mixin atLarge {
+            visibility: visible;
+            display: inline;
+            margin-bottom: 23px;
+        }
+    }
+}

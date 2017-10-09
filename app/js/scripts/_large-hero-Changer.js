@@ -1,30 +1,12 @@
 var changeWord = document.getElementsByClassName('changeWord');
-var words = [
-    'SERENITY',
-    'TRANQUILITY',
-    'HAPPINESS',
-    'RELAXATION'
-];
-
+var words = [ ' SERENITY', ' TRANQUILITY',' HAPPINESS', ' RELAXATION'];
 var counter = 0;
+setInterval(change, 5000);
 
-
-
-setInterval(function() {
- 
-    if (counter == words.length) {
-       counter = 0;
-   
-    } 
-    
-    else {
-         changeWord[0].addClass = ("animate");
-
-         changeWord[0].innerHTML = (words[counter]) ;
-      
-         counter++;
-    }
-       
-
-}, 5000);
-
+function change() {
+  changeWord[0].innerHTML = words[counter];
+  counter++;
+  if (counter >= words.length) {
+    counter = 0;
+  }
+}

@@ -1,31 +1,34 @@
 .large-hero {
     position: relative;
     max-width: 100%;
-
+    display: inline-block;
+   
+    
     &-logo {
-
         position: absolute;
         margin: 0 auto;
         left: 0;
         right: 0;
         height: 40px;
         top: 5%;
-        
-
+       
         @mixin atSmall {
             height: 70px;
         }
-
         @mixin atMedium {
+            top: 2%;
             height: 80px;
         }
         @mixin atLarge {
+            top: 4%;
             height: 90px;
         }
     }
+    
     &-background {
         width: 100%;
     }
+    
     &-title {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -39,6 +42,7 @@
             padding-bottom: 10px;
             margin: 0;
         }
+        
         @mixin atMedium {
             font-size: 1.85rem;
             font-weight: 300;
@@ -53,12 +57,14 @@
             ;
         }
     }
+    
     &-subtitle {
         color: $reg;
         font-weight: 400;
         margin: 0;
         padding: 0;
         font-size: .875em;
+       
         @mixin atSmall {
             font-size: 1rem;
             font-weight: 300;
@@ -73,6 +79,7 @@
             font-weight: 300;
         }
     }
+    
     &-text-container {
         position: absolute;
         top: 45%;
@@ -81,7 +88,7 @@
         padding: 0 20px;
         right: 0;
         left: 0;
-
+        
         @mixin atSmall {
             margin: 0;
             padding: 0 50px;
@@ -89,17 +96,16 @@
         }
         @mixin atMedium {
             padding: 0 70px;
-            transform: translateY(-90%);
+            transform: translateY(-86%);
         }
         @mixin atLarge {
             transform: translateY(-125%);
-
-
         }
     }
-
+    
     &-background {
         display: block;
+
     }
 }
 
@@ -109,21 +115,14 @@
     left: 0;
     right: 0;
     bottom: 3%;
-    font-size:1rem;
+    font-size: 1rem;
     color: white;
     
-         @mixin atSmall {
-             font-size:1.5rem;
+    @mixin atSmall {
+        font-size: 1.5rem;
+    }
 
-            
-        }
-        @mixin atMedium {
-     
-        }
-        @mixin atLarge {
-            font-size: 3rem;
-
-
-        }
-
+    @mixin atLarge {
+        font-size: 3rem;
+    }
 }
