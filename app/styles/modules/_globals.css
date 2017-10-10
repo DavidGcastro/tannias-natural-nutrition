@@ -1,6 +1,7 @@
 html {
 
-    max-width: 100%;
+
+   max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -8,7 +9,6 @@ html {
 
 body {
 
-    width: 100%;
 
     a {
         text-decoration: none;
@@ -30,30 +30,33 @@ body {
 }
 
 .container {
- 
-     @mixin atSmall {
-        margin: 0;
-    }
-
-
-    @mixin atMedium {
-       margin:0 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    @mixin atMedium{
+      margin: 0;
     }
     
     @mixin atLarge{
-        margin: 0 120px;
+        margin: 0 7%;
     }
+ 
+
 }
 
 
 .icon-wrapper {
     padding-right: 3px;
-    
-    @mixin atMedium{
+
+    @mixin atMedium {
         font-size: 1.5rem;
     }
-    @mixin atLarge{
+    @mixin atLarge {
         font-size: 1.2rem;
- 
+
     }
+}
+
+*{
+    box-sizing: border-box;
 }

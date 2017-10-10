@@ -2,6 +2,7 @@
     position: relative;
     max-width: 100%;
     display: inline-block;
+    height: auto;
    
     
     &-logo {
@@ -16,8 +17,8 @@
             height: 70px;
         }
         @mixin atMedium {
-            top: 2%;
-            height: 80px;
+            top: 1%;
+            height: 75px;
         }
         @mixin atLarge {
             top: 4%;
@@ -114,7 +115,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 3%;
+    bottom: 4%;
     font-size: 1rem;
     color: white;
     
