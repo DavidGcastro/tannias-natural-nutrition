@@ -1,4 +1,5 @@
 .email--signup {
+        -webkit-appearance: none;
 
     &--container {
         margin: 0 -20px;
@@ -58,6 +59,7 @@ input[type="email"] {
     height: 45px;
     width: 55%;
     border: 1px solid #e5e9ec;
+        -webkit-appearance: none;
 
     margin: 0;
     font-size: 1rem;
@@ -69,6 +71,8 @@ input[type="email"] {
 
 
 input[type=submit] {
+    -webkit-appearance: none;
+
     background: #bf977e;
     margin-left: -5px;
     border-top-right-radius: 31px;
