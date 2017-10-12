@@ -110,16 +110,27 @@
     }
 }
 
-#icon-center {
+
+
+/*need to override, when i remove icon center as id*/
+.fa-stack {
+  position:static !important;
+}
+
+
+.icon-center {
     position: absolute;
     margin: 0 auto;
+    display: inline-block;
     left: 0;
     right: 0;
     bottom: 4%;
     font-size: 1rem;
     color: white;
+    display: none;
     
     @mixin atSmall {
+        display: block;
         font-size: 1.5rem;
     }
 

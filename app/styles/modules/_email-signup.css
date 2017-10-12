@@ -1,0 +1,83 @@
+.email--signup {
+
+    &--container {
+        margin: 0 -20px;
+        background: $green;
+        padding-bottom: 60px;
+        position: relative;
+
+    }
+
+    &--textcontent {
+        text-align: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        line-height: 150%;
+        h2 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 0;
+
+        }
+        p {
+            font-size: .75rem;
+            margin-top: 0px;
+            margin-bottom: 20px
+        }
+    }
+
+    &--icon {
+        font-size: 61px;
+        color: white;
+        text-align: center;
+
+        .fa-gift {
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+    }
+
+    &--emailform-wrapper {
+        margin: 0;
+        text-align: center;
+
+
+    }
+
+
+}
+
+input[type="email"] {
+    border-top-left-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: inline-block;
+    text-align: center;
+    height: 45px;
+    width: 55%;
+    border: 1px solid #e5e9ec;
+
+    margin: 0;
+    font-size: 1rem;
+    padding: 6px 2px;
+    color: #A9A9A9;
+    font-weight: 300;
+}
+
+
+
+input[type=submit] {
+    background: #bf977e;
+    margin-left: -5px;
+    border-top-right-radius: 31px;
+    border-bottom-right-radius: 31px;
+    width: 35%;
+    font-size: 1.125rem;
+    border: 1px solid rgb(229, 233, 236);
+    height: 45px;
+    color: white;
+    font-weight: bold;
+
+}
