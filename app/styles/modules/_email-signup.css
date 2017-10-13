@@ -1,5 +1,30 @@
 .email--signup {
-        -webkit-appearance: none;
+    -webkit-appearance: none;
+
+    &--innerContent--wrap {
+        padding: 20px 0;
+        position: relative;
+        text-align: center;
+
+
+        @mixin atLarge {
+            padding: 0;
+        }
+    }
+
+
+
+
+    &--iconText {
+        @mixin atMedium {
+            width: 100%;
+        }
+        @mixin atLarge {
+            width: 50%;
+        }
+
+    }
+
 
     &--container {
         margin: 0 -20px;
@@ -7,6 +32,16 @@
         padding-bottom: 60px;
         position: relative;
 
+
+        @mixin atSmall {
+            padding: 60px 0;
+        }
+
+        @mixin atLarge {
+            padding: 50px 0;
+            margin: 0 -20px;
+            @mixin fullWidth-override;
+        }
     }
 
     &--textcontent {
@@ -26,6 +61,37 @@
             margin-top: 0px;
             margin-bottom: 20px
         }
+
+
+        @mixin atMedium {
+
+            position: relative;
+            margin-left: 150px;
+            bottom: 10px;
+
+            h2 {
+                font-size: 1.625rem;
+                line-height: 150%;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @mixin atLarge {
+            margin-left: 0px;
+            position: static;
+            display: inline-block;
+            line-height: 100%;
+
+
+            h2 {
+                font-size: 1.875rem;
+            }
+            p {
+                font-size: 1.125rem;
+            }
+        }
     }
 
     &--icon {
@@ -37,14 +103,28 @@
             margin-top: 50px;
             margin-bottom: 0px;
         }
+
+        @mixin atMedium {
+            position: absolute;
+            bottom: 50%;
+            left: 27%;
+        }
+
+        @mixin atLarge {
+            width: 100%;
+            margin-top: 0;
+            position: static;
+            display: inline;
+            padding-top: 30px;
+            font-size: 70px;
+
+        }
+
+
+
     }
 
-    &--emailform-wrapper {
 
-        text-align: center;
-
-
-    }
 
 
 }
@@ -58,13 +138,24 @@ input[type="email"] {
     height: 45px;
     width: 55%;
     border: 1px solid #e5e9ec;
-        -webkit-appearance: none;
+    -webkit-appearance: none;
 
     margin: 0;
     font-size: 1rem;
     padding: 6px 2px;
     color: #A9A9A9;
     font-weight: 300;
+
+    @mixin atMedium {
+        height: 50px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    @mixin atLarge {
+        height: 61px;
+    }
+
 }
 
 
@@ -77,11 +168,37 @@ input[type=submit] {
     border-top-right-radius: 31px;
     border-bottom-right-radius: 31px;
     width: 35%;
- 
+
     font-size: 1.125rem;
     border: 1px solid rgb(229, 233, 236);
     height: 45px;
     color: white;
     font-weight: bold;
 
+    @mixin atMedium {
+        padding-bottom: 5px;
+        height: 50px;
+    }
+    @mixin atLarge {
+        height: 61px;
+        padding: 5px 6px;
+
+    }
+
+
+}
+
+form {
+    @mixin atLarge {
+        width: 50%;
+        float: right;
+        display: inline;
+        margin: 0 -20px;
+        position: relative;
+        top: -80px;
+        text-align: center;
+
+
+
+    }
 }
