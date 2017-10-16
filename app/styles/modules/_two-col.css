@@ -29,6 +29,10 @@
         height: auto;
         float: none;
         
+        @mixin atSmall{
+            width: 400px;
+        }
+        
         
         @mixin atLarge {
             float: left;
@@ -65,6 +69,10 @@
         
         @mixin atSmall{
             padding: 0 20px;
+            
+            p{
+                font-size: .685rem;
+            }
         }
         
         @mixin atMedium{

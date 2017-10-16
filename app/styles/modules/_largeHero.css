@@ -1,7 +1,7 @@
 .large-hero {
     position: relative;
-    max-width: 100%;
-    display: block;
+    max-width: 1440px;
+    display: inline-block;
     height: auto;
     margin-top: 50px;
 

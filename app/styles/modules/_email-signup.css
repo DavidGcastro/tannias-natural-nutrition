@@ -19,8 +19,13 @@
         position: relative;
         text-align: center;
 
-
-        @mixin atLarge {}
+      
+        @mixin atSmall {
+            padding: 0;
+        }
+        
+        
+    
     }
 
 
@@ -45,6 +50,10 @@
 
 
         @mixin atSmall {
+            padding-bottom:  45px;
+        }
+        
+        @mixin atMedium {
             padding: 60px 0;
         }
 

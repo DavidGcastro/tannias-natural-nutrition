@@ -5,8 +5,8 @@
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 80px;
-    max-width: 1200px;
-
+  
+  
 
 
     @mixin atMedium {

@@ -103,7 +103,8 @@
             height: auto;
 
             @mixin atSmall {
-
+                width: 400px;
+  
 
             }
             @mixin atMedium {
