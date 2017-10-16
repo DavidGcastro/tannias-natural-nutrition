@@ -1,9 +1,18 @@
 .large-hero {
     position: relative;
     max-width: 100%;
-    display: inline-block;
+    display: block;
     height: auto;
+    margin-top: 50px;
 
+    
+    @mixin atMedium {
+        margin-top: 70px;
+    }
+    
+    @mixin atLarge{
+        margin-top: 90px;
+    }
 
     &-logo {
         position: absolute;

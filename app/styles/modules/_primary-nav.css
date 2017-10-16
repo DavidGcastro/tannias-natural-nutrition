@@ -1,11 +1,12 @@
 .primary-nav {
+
     &--pull-right {
 
         float: right;
     }
 
     ul {
-        margin: 0;
+        margin-top: 40px;
         padding: 0;
 
     }
