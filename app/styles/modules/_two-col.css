@@ -1,0 +1,109 @@
+.two-col {
+
+
+
+    a {
+        color: $green;
+        text-decoration: underline;
+    }
+
+
+    &--inner {
+        padding: 60px 0;
+    }
+
+    &--imgContainer {
+        
+        @mixin atSmall{
+          width: 100%;
+            text-align: center;
+        }
+
+        @mixin atLarge {
+            width: 50%;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        float: none;
+        
+        
+        @mixin atLarge {
+            float: left;
+            padding: 85px 0;
+        }
+
+    }
+
+    &--textContainer {
+        text-align: center;
+        float: none;
+        padding: 40px 0;
+        width: 100%;
+   
+        h1 {
+            font-weight: 300;
+            color: $reg;
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            color: $green;
+            font-weight: 300;
+            font-size: 1rem;
+        }
+
+        p {
+            font-weight: 100;
+            color: $reg;
+            line-height: 150%;
+            font-size: .875rem;
+        }
+        
+        @mixin atSmall{
+            padding: 0 20px;
+        }
+        
+        @mixin atMedium{
+            padding: 0 10%;
+            
+            h1{
+                font-size: 1.75rem;
+            }
+            h3{
+                font-size: 1.2rem;
+            }
+            
+            p{
+                font-size: 1rem;
+                
+            }
+        }
+        
+
+        @mixin atLarge {
+           text-align: left;
+            width: 50%;
+            float: right;
+            padding: 85px 0;
+
+            h1 {
+                font-size: 1.875rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+
+}

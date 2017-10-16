@@ -12,16 +12,18 @@
         right: 0;
         height: 40px;
         top: 5%;
+        display: none;
 
         @mixin atSmall {
             height: 70px;
+            display: block;
         }
         @mixin atMedium {
-            top: 1%;
+            top: 4%;
             height: 75px;
         }
         @mixin atLarge {
-            top: 4%;
+      
             height: 90px;
         }
     }
