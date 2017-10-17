@@ -1,16 +1,13 @@
 .two-col {
 
-
+      display: inline-block;
+      padding: 85px 0;
 
     a {
         color: $green;
         text-decoration: underline;
     }
 
-
-    &--inner {
-        padding: 60px 0;
-    }
 
     &--imgContainer {
         
@@ -36,7 +33,6 @@
         
         @mixin atLarge {
             float: left;
-            padding: 85px 0;
         }
 
     }
@@ -44,7 +40,6 @@
     &--textContainer {
         text-align: center;
         float: none;
-        padding: 40px 0;
         width: 100%;
    
         h1 {
@@ -71,7 +66,7 @@
             padding: 0 20px;
             
             p{
-                font-size: .685rem;
+                font-size: .875rem;
             }
         }
         
@@ -93,10 +88,10 @@
         
 
         @mixin atLarge {
+            padding: 0;
            text-align: left;
             width: 50%;
             float: right;
-            padding: 85px 0;
 
             h1 {
                 font-size: 1.875rem;
