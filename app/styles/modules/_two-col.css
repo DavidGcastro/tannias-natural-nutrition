@@ -1,7 +1,9 @@
 .two-col {
 
-      display: inline-block;
-      padding: 85px 0;
+    display: inline-block;
+    padding: 85px 0;
+    border-bottom: 1px solid #e5e9ec;
+    width: 100%;
 
     a {
         color: $green;
@@ -9,10 +11,10 @@
     }
 
 
-    &--imgContainer {
-        
-        @mixin atSmall{
-          width: 100%;
+    &--leftContainer {
+
+        @mixin atSmall {
+            width: 100%;
             text-align: center;
         }
 
@@ -21,27 +23,27 @@
         }
     }
 
-    img {
+    .two-col-img {
         max-width: 100%;
         height: auto;
         float: none;
-        
-        @mixin atSmall{
+
+        @mixin atSmall {
             width: 400px;
         }
-        
-        
+
+
         @mixin atLarge {
             float: left;
         }
 
     }
 
-    &--textContainer {
+    &--rightContainer {
         text-align: center;
         float: none;
         width: 100%;
-   
+
         h1 {
             font-weight: 300;
             color: $reg;
@@ -61,35 +63,35 @@
             line-height: 150%;
             font-size: .875rem;
         }
-        
-        @mixin atSmall{
+
+        @mixin atSmall {
             padding: 0 20px;
-            
-            p{
+
+            p {
                 font-size: .875rem;
             }
         }
-        
-        @mixin atMedium{
+
+        @mixin atMedium {
             padding: 0 10%;
-            
-            h1{
+
+            h1 {
                 font-size: 1.75rem;
             }
-            h3{
+            h3 {
                 font-size: 1.2rem;
             }
-            
-            p{
+
+            p {
                 font-size: 1rem;
-                
+
             }
         }
-        
+
 
         @mixin atLarge {
             padding: 0;
-           text-align: left;
+            text-align: left;
             width: 50%;
             float: right;
 
