@@ -50,12 +50,7 @@
         width: 100%;
         height: auto;
  
-/*            MIGHT CHANGE THIS AT SMALL*/
-        
-        @mixin atSmall{
-            width:500px;
-            height: auto;
-        }
+
       
     }
 
