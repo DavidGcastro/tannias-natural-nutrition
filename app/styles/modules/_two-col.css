@@ -1,3 +1,4 @@
+/*
 .two-col {
 
     display: inline-block;
@@ -10,8 +11,8 @@
         text-decoration: underline;
     }
 
+    &--imgContainer {
 
-    &--leftContainer {
 
         @mixin atSmall {
             width: 100%;
@@ -21,25 +22,21 @@
         @mixin atLarge {
             width: 50%;
         }
+
+        .two-col-img {
+            max-width: 100%;
+            height: auto;
+            float: none;
+
+            @mixin atLarge {
+                float: left;
+            }
+
+        }
     }
 
-    .two-col-img {
-        max-width: 100%;
-        height: auto;
-        float: none;
 
-        @mixin atSmall {
-            width: 400px;
-        }
-
-
-        @mixin atLarge {
-            float: left;
-        }
-
-    }
-
-    &--rightContainer {
+    &--textContainer {
         text-align: center;
         float: none;
         width: 100%;
@@ -94,6 +91,141 @@
             text-align: left;
             width: 50%;
             float: right;
+            h1 {
+                font-size: 1.875rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+
+}
+*/
+
+.two-col {
+    display: inline-block;
+    padding: 85px 0;
+    border-bottom: 1px solid #e5e9ec;
+    width: 100%;
+
+
+    a {
+        color: $green;
+        text-decoration: underline;
+    }
+
+
+    &--leftContainer {
+        float: none;
+        width: 100%;
+
+        @mixin atLarge {
+            float: left;
+            width: 50%;
+        }
+
+
+    }
+
+    &--rightContainer {
+        float: none;
+        width: 100%;
+
+        @mixin atLarge {
+            float: right;
+            width: 50%;
+        }
+
+
+    }
+    &--imgContainer {
+        
+        text-align: center;
+        .two-col-img {
+            max-width: 100%;
+            height: auto;
+            float: none;
+            margin-bottom: 20px;
+
+
+        }
+    }
+
+
+    &--textContainer {
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 300;
+            color: $reg;
+            font-size: 1.5rem;
+            line-height: 1.2;
+        
+        }
+
+        h3 {
+            margin-top: 0;
+            color: $green;
+            font-weight: 300;
+            font-size: 1rem;
+        }
+
+        p {
+            font-weight: 100;
+            color: $reg;
+            line-height: 150%;
+            font-size: .875rem;
+        }
+
+        @mixin atSmall {
+            padding: 0 20px;
+            
+            h1{
+                margin-bottom: 0;
+            }
+            h3{
+                margin-top: 5px;
+            }
+
+            p {
+                font-size: .875rem;
+            }
+        }
+
+        @mixin atMedium {
+            padding: 0 10%;
+
+            h1 {
+                font-size: 1.75rem;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+
+            }
+        }
+
+
+        @mixin atLarge {
+            padding: 0;
+            text-align: left;
+
 
             h1 {
                 font-size: 1.875rem;
@@ -109,6 +241,17 @@
         }
 
     }
+
+    &--imgContainer {
+        .two-col-img {
+            max-width: 100%;
+            height: auto;
+            float: none;
+
+
+        }
+    }
+
 
 
 }

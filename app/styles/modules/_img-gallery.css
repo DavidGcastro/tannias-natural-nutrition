@@ -3,6 +3,8 @@
     padding: 85px 0;
     text-align: center;
     font-weight: 300;
+    border-bottom: 1px solid #e5e9ec;
+
 
     &--gridContainer {
         width: 100%;
@@ -18,30 +20,30 @@
         margin-bottom: 5px;
 
 
-        @mixin atSmall{
+        @mixin atSmall {
             margin-bottom: 10px;
             display: inline-block;
             vertical-align: bottom;
         }
-        
-        @mixin atMedium{
+
+        @mixin atMedium {
             margin: 0;
             overflow: auto;
-            
-       
+
+
         }
-        
-        
+
+
         @mixin atLarge {
             width: 33%;
             margin: 0;
-          
+
         }
 
 
         &:hover img {
             transition: all .25s ease-in-out;
-            transform: scale(1.2);
+            transform: scale(1.1);
 
         }
     }
@@ -50,7 +52,7 @@
         width: 100%;
         height: auto;
 
-      
+
     }
 
 
@@ -62,7 +64,6 @@
         top: 0px;
         left: 0;
         right: 0;
-
 
         h3 {
             display: none;
@@ -91,7 +92,7 @@
                 display: block;
             }
 
-       
+
 
 
         }

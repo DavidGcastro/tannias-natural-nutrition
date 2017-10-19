@@ -90,7 +90,7 @@
         @mixin atMedium {
             display: inline-block;
         }
-        
+
         @mixin atLarge {
             width: 100%;
         }
@@ -104,18 +104,11 @@
 
             @mixin atSmall {
                 width: 400px;
-  
-
-            }
-            @mixin atMedium {
 
 
             }
-            @mixin atLarge {
-
-             
-
-            }
+            @mixin atMedium {}
+            @mixin atLarge {}
         }
     }
 
