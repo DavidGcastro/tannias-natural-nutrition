@@ -1,155 +1,150 @@
 .large-hero {
     position: relative;
-    width: 100%;
     height: auto;
+    margin: 0 auto;
 
-    &-content{
-    
-    }
-    
+    &-content {
 
-    &-logo {
+        &-logo {
+            display: none;
+
+            @mixin atSmall {
+                display: inline-block;
+                height: 40px;
+                text-align: center;
+                margin: 10px 0;
+
+            }
+            @mixin atMedium{
+                height: 60px;
+            }
+            @mixin atLarge{
+                height: 80px;
+                margin: 0;
+            }
+        }
+
+        text-align: center;
+        width: 100%;
         position: absolute;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        height: 40px;
-     
-        display: none;
+        top: 88px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        position: absolute;
+        top: 88px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-        @mixin atSmall {
-            top: 20%;
-            height: 60px;
-            display: block;
-        }
-        @mixin atMedium {
-
-           
-        }
         @mixin atLarge {
-      
-            height: 90px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 88px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            position: absolute;
+            top: 88px;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        &-title {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            font-weight: 300;
+            color: $green;
+            font-size: 1rem;
+            font-weight: 400;
+
+            @mixin atSmall {
+                font-size: 1.25rem;
+                font-weight: 400;
+                padding-bottom: 10px;
+                margin: 0;
+            }
+
+            @mixin atMedium {
+                font-size: 1.85rem;
+                font-weight: 300;
+                padding-bottom: 10px;
+                margin: 0;
+            }
+            @mixin atLarge {
+                font-size: 3rem;
+                font-weight: 300;
+                padding-bottom: 10px;
+                margin-top: 50px;
+                ;
+            }
+        }
+
+        &-subtitle {
+            color: $reg;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            font-size: .875em;
+
+            @mixin atSmall {
+                font-size: 1rem;
+                font-weight: 300;
+            }
+            @mixin atMedium {
+                font-size: 1.35rem;
+                font-weight: 300;
+            }
+            @mixin atLarge {
+                margin-top: 10px;
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+
         }
     }
 
     &-background {
-      width: 100%;
+        width: 100%;
         height: 250px;
-        
-        @mixin atSmall{
+
+        @mixin atSmall {
             width: 100%;
             height: auto;
         }
-    
     }
 
-    &-title {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-weight: 300;
-        color: $green;
-        font-size: 1rem;
-        font-weight: 400;
-        
-        @mixin atSmall {
-            font-size: 1.25rem;
-            font-weight: 400;
-            padding-bottom: 10px;
-            margin: 0;
-        }
 
-        @mixin atMedium {
-            font-size: 1.85rem;
-            font-weight: 300;
-            padding-bottom: 10px;
-            margin: 0;
-        }
-        @mixin atLarge {
-            font-size: 3rem;
-            font-weight: 300;
-            padding-bottom: 10px;
-            margin-top: 50px;
-            ;
-        }
+
+    /*need to override, when i remove icon center as id*/
+    .fa-stack {
+        position: static !important;
     }
 
-    &-subtitle {
-        color: $reg;
-        font-weight: 400;
-        margin: 0;
-        padding: 0;
-        font-size: .875em;
 
-        @mixin atSmall {
-            font-size: 1rem;
-            font-weight: 300;
-        }
-        @mixin atMedium {
-            font-size: 1.35rem;
-            font-weight: 300;
-        }
-        @mixin atLarge {
-            margin-top: 10px;
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-    }
-
-    &-text-container {
+    .icon-center {
         position: absolute;
-        top: 55%;
-        transform: translateY(-57%);
-        text-align: center;
-        padding: 0 20px;
-        right: 0;
+        margin: 0 auto;
+        display: inline-block;
         left: 0;
+        right: 0;
+        bottom: 4%;
+        font-size: 1rem;
+        color: white;
+        display: none;
 
         @mixin atSmall {
-            margin: 0;
-            padding: 0 50px;
-            transform: translateY(-40%);
+            display: block;
+            font-size: 1.5rem;
         }
-        @mixin atMedium {
-            padding: 0 70px;
-            transform: translateY(-67%);
-        }
+
         @mixin atLarge {
-            transform: translateY(-80%);
+            font-size: 2rem;
         }
-    }
-
-    &-background {
-        display: block;
-
-    }
-}
-
-
-
-/*need to override, when i remove icon center as id*/
-
-.fa-stack {
-    position: static !important;
-}
-
-
-.icon-center {
-    position: absolute;
-    margin: 0 auto;
-    display: inline-block;
-    left: 0;
-    right: 0;
-    bottom: 4%;
-    font-size: 1rem;
-    color: white;
-    display: none;
-
-    @mixin atSmall {
-        display: block;
-        font-size: 1.5rem;
-    }
-
-    @mixin atLarge {
-        font-size: 2rem;
     }
 }
