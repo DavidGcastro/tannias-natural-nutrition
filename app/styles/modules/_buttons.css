@@ -1,21 +1,58 @@
 .button {
     text-decoration: none;
-    text-transform: uppercase;
     outline: none;
+    
+    
+    &-container{
+      margin-bottom: 20px;
+      text-align: center;
+        box-sizing: border-box;
+    
+        
+        @mixin atLarge{
+            text-align: left;
+            width: 100%;
+        }
+    }
+    
+    
     &--green {
         background: $green;
+        color: white;
+
 
     }
 
+    &--grey {
+        background: #b5bcc5;
+        color: white;
+    }
+
+    &--medium {
+        border: none;
+        padding: 12px 15px;
+        border-radius: 3px;
+        font-size: 1rem;
+        font-weight: 500;
+    
+   
+        
+       
+        @mixin atLarge {
+          
+            height: 45px;
+        }
+    }
 
     &--thin {
 
+        text-transform: uppercase;
 
         @mixin atMedium {
             padding: 20px;
             border-radius: 20%;
             color: white;
-            
+
 
         }
 
@@ -24,12 +61,8 @@
             font-weight: bold;
             font-size: .875rem;
             border-radius: 10px;
-            
+
         }
-
-
-
-
 
 
         &:hover {
