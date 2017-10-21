@@ -2,7 +2,32 @@
     display: inline-block;
     padding: 85px 0;
     border-bottom: 1px solid #e5e9ec;
-/*    width: 100%;*/
+
+    &--backgroundImg {
+        
+        background: url(http://spawordpresstheme.net/wellnesscenter2/wp-content/uploads/sites/3/2015/12/product-info-pbg.jpg) no-repeat center top fixed;
+      
+    }
+
+    ul {
+        text-align: left;
+        margin-top: 50px;
+        padding-left: 0;
+    }
+
+    li {
+        color: $reg;
+        font-weight: 300;
+        margin-bottom: 15px;
+
+
+    }
+
+    i {
+        padding-right: 20px;
+        color: $green;
+
+    }
 
 
     a {
