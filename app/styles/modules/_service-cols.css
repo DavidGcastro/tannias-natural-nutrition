@@ -91,9 +91,7 @@
             display: inline-block;
         }
 
-        @mixin atLarge {
-            width: 100%;
-        }
+    
 
 
 

@@ -5,12 +5,13 @@
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 80px;
-  
+   
   
 
 
     @mixin atMedium {
         height: 100px;
+        width: 100%;
 
     }
 

@@ -35,6 +35,8 @@
 
 
         @mixin atLarge {
+            text-align: center;
+            max-width: 500px;
             width: 33%;
             margin: 0;
 
