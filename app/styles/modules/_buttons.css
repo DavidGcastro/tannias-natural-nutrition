@@ -1,21 +1,21 @@
 .button {
     text-decoration: none;
     outline: none;
-    
-    
-    &-container{
-      margin-bottom: 20px;
-      text-align: center;
+
+
+    &-container {
+        margin-bottom: 20px;
+        text-align: center;
         box-sizing: border-box;
-    
-        
-        @mixin atLarge{
+
+
+        @mixin atLarge {
             text-align: left;
             width: 100%;
         }
     }
-    
-    
+
+
     &--green {
         background: $green;
         color: white;
@@ -34,23 +34,23 @@
         border-radius: 3px;
         font-size: 1rem;
         font-weight: 500;
-         opacity: 0.8; 
-    
-        &:hover{
+        opacity: 0.8;
+
+        &:hover {
             opacity: 1;
         }
-   
-        
-       
+
+
+
         @mixin atLarge {
-          
+
             height: 45px;
         }
     }
-    
-    
-    
-    
+
+
+
+
 
     &--thin {
 
@@ -83,10 +83,10 @@
         }
     }
 
-    
-    
-    
-    
+
+
+
+
     &--text {
         @mixin atMedium {
             visibility: hidden;
@@ -97,5 +97,17 @@
             display: inline;
             margin-bottom: 23px;
         }
+    }
+
+    &-large {
+        border: 2px $reg solid;
+        padding: 15px 35px 13px 35px;
+        width: 100%;
+        border: 2px solid #b5bcc5;
+        color: #98a2af;
+        font-size: 1rem;
+        font-weight: bold;
+
+
     }
 }
