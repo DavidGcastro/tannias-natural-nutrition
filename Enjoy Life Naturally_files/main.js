@@ -1,1 +1,0 @@
-function change(){changeWord[0].innerHTML=words[counter],++counter>=words.length&&(counter=0)}var changeWord=document.getElementsByClassName("changeWord"),words=[" SERENITY"," TRANQUILITY"," HAPPINESS"," RELAXATION"],counter=0;setInterval(change,5e3);
