@@ -51,8 +51,10 @@
     &--rightContainer {
         float: none;
         width: 100%;
+        text-align: center;
 
         @mixin atLarge {
+            text-align: right;
             float: right;
             width: 50%;
         }
@@ -61,9 +63,14 @@
     }
     &--imgContainer {
 
+        display: inline-block;
         text-align: center;
         
         
+        @mixin atLarge{
+            text-align: initial;
+        }
+    
         .two-col-img {
             max-width: 100%;
             height: auto;
