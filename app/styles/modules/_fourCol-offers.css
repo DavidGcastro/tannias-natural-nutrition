@@ -2,11 +2,14 @@
     border-top: 1px solid #e5e9ec;
     padding-top: 60px;
 
+
+
     h1 {
         text-align: center;
         font-weight: 300;
         color: $reg;
         font-size: 2rem;
+
 
 
         @mixin atLarge {
@@ -20,12 +23,15 @@
 
     &-container {
         width: 100%;
+        padding-bottom: 40px;
         @mixin atSmall {
             margin-top: 40px;
+            padding-bottom: 80px;
         }
 
+
+
         @mixin atLarge {
-            padding: 80px 0;
             display: flex;
             justify-content: center;
 
@@ -41,14 +47,14 @@
         background: #f7f7f7;
         margin: auto;
 
-        @mixin atMedium{ 
+        @mixin atMedium {
             width: 80%;
         }
 
         @mixin atLarge {
             max-width: 300px;
             margin: inherit;
-          
+
 
         }
 
@@ -138,8 +144,9 @@
 
     }
     &-button-container {
+        
         position: absolute;
-        bottom: 50px;
+        bottom: 30px;
         left: 0;
         right: 0;
         text-align: center;
