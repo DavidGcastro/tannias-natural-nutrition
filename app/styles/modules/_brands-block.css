@@ -1,0 +1,54 @@
+.brand-block {
+
+    &__container {
+
+        padding: 40px 0;
+
+    }
+
+    &__textContainer {
+        h1 {
+            color: $reg;
+            font-weight: 300;
+            text-align: center;
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+    }
+
+    &__logoContainer {
+        text-align: center;
+        width: 100%;
+
+        img {
+
+            width: 200px;
+            height: auto;
+            margin-bottom: 40px;
+            padding: 8px;
+
+
+            @mixin atSmall {
+                padding: 15px;
+             
+
+            }
+            
+            @mixin atMedium{
+                   width: 225px;
+            }
+            
+            @mixin atLarge{
+             
+                margin: 0 15px;
+            }
+            
+       
+        }
+
+
+    }
+
+
+
+}

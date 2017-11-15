@@ -85,7 +85,7 @@ gulp.task('styles', function () {
 gulp.task('imagemin', () =>
     gulp.src('./app/images/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('temp/images'))
+    .pipe(gulp.dest('./app/temp/images'))
 );
 
 
