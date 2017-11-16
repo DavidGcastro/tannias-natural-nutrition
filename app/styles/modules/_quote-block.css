@@ -48,22 +48,36 @@
         h1 {
             color: $green;
             font-size: 1rem;
-/*            font-weight: 300;*/
+            /*            font-weight: 300;*/
         }
         p {
             color: $reg;
             font-weight: 300;
             padding: 0 30px;
         }
+
+
+        .rating {
+            display: block;
+            margin-top: 10px;
+        }
+
+
+
         span {
             font-size: .875rem;
             font-weight: 300;
         }
 
+
         @mixin atSmall {
             line-height: .5px;
             h1 {
                 margin-top: 10px;
+            }
+
+            .rating {
+                display: inline;
             }
             p {
                 color: $reg;
@@ -73,6 +87,10 @@
                 margin: 0;
                 span {
                     font-size: 1rem;
+
+                    .rating {
+                        display: inline;
+                    }
                 }
             }
         }
@@ -90,6 +108,8 @@
             span {
                 font-size: 1.125rem;
                 margin-left: 10px;
+
+
             }
         }
     }
@@ -128,4 +148,5 @@
             }
         }
     }
+
 }

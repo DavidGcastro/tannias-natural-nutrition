@@ -1,0 +1,82 @@
+.contact-us {
+    &__container {
+        padding: 60px 0;
+        text-align: center;
+
+        h1 {
+            margin-bottom: 60px;
+            color: $reg;
+            font-weight: 300;
+            font-size: 1.75rem;
+            
+            @mixin atLarge{
+                font-size: 3rem;
+            }
+        }
+    }
+    &__innerContainer {
+        font-size: .875rem;
+        
+        @mixin atLarge{
+            display: inline-block;
+            
+            p{
+                font-size: 1.2rem;
+            }
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        .link {
+            color: $green;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            font-size: 4rem;
+            font-weight: normal;
+            color: $green;
+
+            i {
+                font-weight: 300;
+            }
+        }
+
+    }
+    &__address {
+
+        margin: 0 40px;
+
+        @mixin atMedium {
+            margin:0;
+            display: inline-block;
+            width: 49%;
+          
+        }
+        @mixin atLarge{
+            display: block;
+            width: 50%;
+            float: left;
+            padding: 0 40px;
+        }
+
+    }
+    &__phone {
+        margin: 0 40px;
+        @mixin atMedium {
+            margin: 0;
+            display: block;
+            width: 50%;
+            float: right;
+            padding:0 40px;
+       
+            
+        }
+    }
+
+}

@@ -28,7 +28,7 @@
 
         @mixin atMedium {
             margin: 0;
-            overflow: auto;
+/*            overflow: auto;*/
 
 
         }

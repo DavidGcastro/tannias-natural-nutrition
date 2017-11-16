@@ -108,7 +108,31 @@
         font-size: 1rem;
         font-weight: bold;
 
+    }
     
+    &-large_white{
+          
 
+        padding: 13px 20px 11px 20px;
+        width: 100%;
+        background: white;
+        color: $green;
+        font-size: 1rem;
+        font-weight: bold;
+        font-size: .875rem;
+        font-weight: bold;
+
+        @mixin atLarge {
+            font-size: 1.0625rem;
+
+
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .2);
+            color: white;
+            border: 2px white solid;
+            transition: all .2s ease-out;
+        }
     }
 }

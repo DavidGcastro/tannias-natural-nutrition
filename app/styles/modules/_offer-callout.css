@@ -1,0 +1,52 @@
+.offer-callout {
+
+    &__container {
+        background: $green;
+        padding: 60px 0;
+
+        @mixin atMedium {
+
+            padding: 80px 0;
+        }
+    }
+
+    &__textContainer {
+        text-align: center;
+        color: white;
+        font-weight: 300;
+
+
+
+        h3 {
+            font-size: 1rem;
+
+
+
+        }
+
+        h1 {
+            font-size: 1.875rem;
+            line-height: 150%;
+        }
+
+        @mixin atMedium {
+            h1 {
+                font-size: 2.625rem;
+                margin: 0;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__buttonContainer {
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+
+
+
+}
