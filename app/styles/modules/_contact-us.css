@@ -8,19 +8,19 @@
             color: $reg;
             font-weight: 300;
             font-size: 1.75rem;
-            
-            @mixin atLarge{
+
+            @mixin atLarge {
                 font-size: 3rem;
             }
         }
     }
     &__innerContainer {
         font-size: .875rem;
-        
-        @mixin atLarge{
+
+        @mixin atLarge {
             display: inline-block;
-            
-            p{
+
+            p {
                 font-size: 1.2rem;
             }
         }
@@ -51,14 +51,15 @@
     &__address {
 
         margin: 0 40px;
+        max-width: 600px;
 
         @mixin atMedium {
-            margin:0;
+            margin: 0;
             display: inline-block;
             width: 49%;
-          
+
         }
-        @mixin atLarge{
+        @mixin atLarge {
             display: block;
             width: 50%;
             float: left;
@@ -68,14 +69,16 @@
     }
     &__phone {
         margin: 0 40px;
+        max-width: 600px;
+
         @mixin atMedium {
             margin: 0;
             display: block;
             width: 50%;
             float: right;
-            padding:0 40px;
-       
-            
+            padding: 0 40px;
+
+
         }
     }
 
