@@ -24,6 +24,7 @@
     &-container {
         width: 100%;
         padding-bottom: 40px;
+        
         @mixin atSmall {
             margin-top: 40px;
             padding-bottom: 80px;

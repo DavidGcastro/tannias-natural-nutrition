@@ -18,6 +18,7 @@ var mixins = require('postcss-mixins');
 gulp.task('watch', function () {
     browserSync.init({
         //where should i go?
+
         server: {
             baseDir: 'app'
         }
@@ -38,7 +39,7 @@ gulp.task('watch', function () {
 
     watch('./app/js/scripts/*js', function () {
         gulp.start('scripts');
-         browserSync.reload();
+        browserSync.reload();
     });
 });
 
@@ -46,9 +47,9 @@ gulp.task('watch', function () {
 
 //browsersync styles, styles is dependency so it will run and complete first
 
-gulp.task('cssInject',['styles'], function(){
-   return gulp.src('./app/styles/temp/source.css')
-    .pipe(browserSync.stream());
+gulp.task('cssInject', ['styles'], function () {
+    return gulp.src('./app/styles/temp/source.css')
+        .pipe(browserSync.stream());
 });
 
 

@@ -11,6 +11,7 @@
 
             @mixin atLarge {
                 font-size: 3rem;
+                text-align: left;
             }
         }
     }
@@ -19,8 +20,11 @@
 
         @mixin atLarge {
             display: inline-block;
+            text-align: left;
+
 
             p {
+                margin-top: 30px;
                 font-size: 1.2rem;
             }
         }
@@ -42,6 +46,11 @@
             font-weight: normal;
             color: $green;
 
+            @mixin atLarge {
+                float: left;
+                margin-right: 30px;
+            }
+
             i {
                 font-weight: 300;
             }
@@ -57,13 +66,15 @@
             margin: 0;
             display: inline-block;
             width: 49%;
+            padding: 0 30px;
+
 
         }
         @mixin atLarge {
             display: block;
             width: 50%;
             float: left;
-            padding: 0 40px;
+            padding: 0px;
         }
 
     }
@@ -76,9 +87,13 @@
             display: block;
             width: 50%;
             float: right;
-            padding: 0 40px;
+            padding: 0 30px;
 
 
+        }
+        @mixin atLarge {
+            padding-left: 20px;
+          
         }
     }
 

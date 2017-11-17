@@ -39,7 +39,9 @@
             }
             
             @mixin atLarge{
-             
+                
+                width: 250px;
+                padding: 24px;
                 margin: 0 15px;
             }
             

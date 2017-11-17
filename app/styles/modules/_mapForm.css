@@ -1,0 +1,75 @@
+.mapForm {
+
+    &__container {
+        border-top: 1px solid #e5e9ec;
+        padding: 80px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    &__map {
+
+        display: inline-block;
+
+
+
+    }
+
+    &__formContainer {
+
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        left: 0;
+        right: 0;
+        top: -105px;
+
+
+
+
+    }
+
+
+    &__form {
+        width: 600px;
+        font-size: 1rem;
+        position: static;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: left;
+        margin-left: 30px;
+        font-weight: 300;
+
+
+        label {
+
+            display: block;
+            padding-bottom: 10px;
+        }
+
+        input {
+            display: block;
+            height: 47px;
+            width: 100%;
+            background-color: #e5e9ec;
+            border: none;
+            padding: 15px;
+            font-size: .875rem;
+            color: $reg;
+            font-weight: 300;
+        }
+        
+    }
+
+    &__formElement {
+        padding-bottom: 20px;
+
+
+    }
+
+
+
+
+}

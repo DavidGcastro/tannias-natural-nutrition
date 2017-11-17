@@ -3,6 +3,7 @@
     &__container {
         background: $green;
         padding: 60px 0;
+        background-image: url(//spawordpresstheme.net/wellnesscenter2/wp-content/themes/wellnesscenter/assets/css/../img/cta-background.png);
 
         @mixin atMedium {
 

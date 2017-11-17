@@ -5,9 +5,7 @@
     &--content {
 
         @mixin atLarge {
-/*            max-width: 1200px;*/
-/*            margin: auto;*/
-
+            padding: 80px 0;
         }
 
 
@@ -15,17 +13,17 @@
 
 
     &--innerContent--wrap {
-/*        padding: 20px 0;*/
+        /*        padding: 20px 0;*/
         position: relative;
         text-align: center;
 
-      
+
         @mixin atSmall {
             padding: 0;
         }
-        
-        
-    
+
+
+
     }
 
 
@@ -50,9 +48,9 @@
 
 
         @mixin atSmall {
-            padding-bottom:  45px;
+            padding-bottom: 45px;
         }
-        
+
         @mixin atMedium {
             padding: 60px 0;
         }
