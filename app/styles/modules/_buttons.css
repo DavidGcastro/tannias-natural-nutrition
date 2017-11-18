@@ -1,33 +1,23 @@
 .button {
     text-decoration: none;
     outline: none;
-
-
     &-container {
         margin-bottom: 20px;
         text-align: center;
         box-sizing: border-box;
-
-
         @mixin atLarge {
             text-align: left;
             width: 100%;
         }
     }
-
-
     &--green {
         background: $green;
         color: white;
-
-
     }
-
     &--grey {
         background: #b5bcc5;
         color: white;
     }
-
     &--medium {
         border: none;
         padding: 12px 15px;
@@ -36,6 +26,38 @@
         font-weight: 500;
         opacity: 0.8;
 
+
+        &__email {
+            padding: 13px 30px;
+            font-size: 1rem;
+            font-weight: 500;
+            opacity: 0.8;
+            font-weight: 500;
+            background-color: $green;
+            opacity: 1;
+            border: none;
+            transition: all .2s ease-out;
+            i {
+                padding-left: 5px;
+                transition: all .2s ease-out;
+            }
+
+            &:hover {
+                background-color: #c4e1dd;
+
+
+
+                i {
+                    padding-left: 10px;
+                }
+
+            }
+
+
+        }
+
+
+
         &:hover {
             opacity: 1;
         }
@@ -43,50 +65,30 @@
 
 
         @mixin atLarge {
-
             height: 45px;
         }
     }
-
-
-
-
-
     &--thin {
-
         text-transform: uppercase;
-
         @mixin atMedium {
             padding: 20px;
             border-radius: 20%;
             color: white;
-
-
         }
-
         @mixin atLarge {
             padding: 15px;
             font-weight: bold;
             font-size: .875rem;
             border-radius: 10px;
-
         }
-
-
         &:hover {
             background: white;
             border: 2px solid $green;
             color: $green;
             border: 2px solid $green;
             transition: all .2s ease-out;
-
         }
     }
-
-
-
-
-
     &--text {
         @mixin atMedium {
             visibility: hidden;
@@ -98,7 +100,6 @@
             margin-bottom: 23px;
         }
     }
-
     &-large {
         border: 2px $reg solid;
         padding: 10px 20px 10px 20px;
@@ -107,12 +108,8 @@
         color: #98a2af;
         font-size: 1rem;
         font-weight: bold;
-
     }
-    
-    &-large_white{
-          
-
+    &-large_white {
         padding: 13px 20px 11px 20px;
         width: 100%;
         background: white;
@@ -121,13 +118,9 @@
         font-weight: bold;
         font-size: .875rem;
         font-weight: bold;
-
         @mixin atLarge {
             font-size: 1.0625rem;
-
-
         }
-
         &:hover {
             background-color: rgba(255, 255, 255, .2);
             color: white;

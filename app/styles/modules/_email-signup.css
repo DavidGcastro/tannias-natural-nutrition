@@ -181,7 +181,7 @@ input[type="email"] {
 
 
 
-button[type=submit] {
+#emailButton {
     -webkit-appearance: none;
 
     background: #bf977e;

@@ -1,0 +1,40 @@
+.footer {
+    background-color: #e5e9ec;
+    padding: 35px 0;
+    
+    @mixin atMedium {
+        display: inline-block;
+        width: 100%;
+    }
+
+    p {
+        font-size: .75em;
+        color: $reg;
+        font-weight: 300;
+
+        @mixin atMedium {
+            float: left;
+            font-size: 1rem;
+        }
+    }
+
+    &__socialLinks {
+
+        text-align: center;
+
+        @mixin atMedium {
+            float: right;
+            display: block;
+
+
+        }
+        a i {
+            padding: 10px;
+            color: $green;
+            
+            @mixin atMedium{
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
