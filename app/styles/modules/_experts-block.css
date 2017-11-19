@@ -30,7 +30,16 @@
         color: $reg;
         margin-bottom: 60px;
         
+        
+        img{
+            width: 200px;
+        }
+        
         @mixin atLarge {
+            
+        img{
+            width: 300px;
+        }
             display: inline-block;
             width:  33%;
             padding: 5px;

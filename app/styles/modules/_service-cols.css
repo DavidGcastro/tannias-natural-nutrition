@@ -101,12 +101,14 @@
             height: auto;
 
             @mixin atSmall {
-                width: 400px;
+                width: 300px;
 
 
             }
-            @mixin atMedium {}
-            @mixin atLarge {}
+            @mixin atMedium {
+                width: 400px;
+            }
+         
         }
     }
 

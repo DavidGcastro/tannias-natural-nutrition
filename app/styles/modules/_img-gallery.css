@@ -17,7 +17,7 @@
         position: relative;
         vertical-align: bottom;
         margin-bottom: 5px;
-         overflow: hidden;
+        overflow: hidden;
 
 
         @mixin atSmall {
@@ -28,9 +28,7 @@
 
         @mixin atMedium {
             margin: 0;
-/*            overflow: auto;*/
-
-
+            /*            overflow: auto;*/
         }
 
 
@@ -41,28 +39,34 @@
             margin: 0;
 
         }
-       
+
 
         &:hover img {
             transition: all .25s ease-in-out;
             transform: scale(1.1);
-            
-           
+
+
         }
         &:hover {
-         overflow: hidden;
+            overflow: hidden;
         }
     }
 
     img {
-        width: 100%;
-        height: 100%;
+
+
+            width: 100%;
+            height: 100%;
+    
+
 
 
     }
 
 
     &--img--textContainer {
+  
+        
         display: inline-block;
         position: absolute;
         height: 100%;

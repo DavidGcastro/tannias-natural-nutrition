@@ -3,10 +3,10 @@
     padding: 85px 0;
 
     &--backgroundImg {
-        
+
         background: url(http://spawordpresstheme.net/wellnesscenter2/wp-content/uploads/sites/3/2015/12/product-info-pbg.jpg) no-repeat center top fixed;
         background-size: cover;
-      
+
     }
 
     ul {
@@ -66,12 +66,23 @@
     &--imgContainer {
 
 
-    
+
         .two-col-img {
-            max-width: 100%;
+
+            width: 300px;
             height: auto;
-            float: none;
+
             margin-bottom: 20px;
+
+
+            @mixin atMedium {
+                width: 500px;
+                max-width: 100%;
+                float: none;
+
+            }
+
+
 
 
         }
