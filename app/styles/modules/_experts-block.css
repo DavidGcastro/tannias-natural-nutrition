@@ -7,20 +7,19 @@
 
     &__title {
         h1 {
-            
+
             text-align: center;
             font-weight: 300;
             color: $reg;
-            
-            @mixin atLarge{
+            @mixin atLarge {
                 font-size: 3rem;
             }
         }
     }
 
-    
-    
-    
+
+
+
     &__personContainer {
         text-align: center;
         margin-top: 60px;
@@ -29,46 +28,52 @@
     &__person {
         color: $reg;
         margin-bottom: 60px;
-        
-        
-        img{
+
+
+        img {
             width: 200px;
         }
-        
+
         @mixin atLarge {
-            
-        img{
-            width: 300px;
-        }
+
+            img {
+                width: 300px;
+            }
             display: inline-block;
-            width:  33%;
+            width : 33%;
             padding: 5px;
             max-width: 420px
         }
-        
+
 
         h1 {
-            
-          
+
+            font-size: 1.5rem;
             margin-bottom: 5px;
+
+
+            @mixin atMedium {
+                font-size: 2rem;
+            }
+
         }
 
         h3 {
             @mixin atMedium {
                 font-size: 1rem;
             }
-        
+
             font-size: .875rem;
         }
 
         p {
-            @mixin atMedium{
+            @mixin atMedium {
                 font-size: 1rem;
                 line-height: 1.6;
             }
-            
-            @mixin atLarge{
-              width: 100%;
+
+            @mixin atLarge {
+                width: 100%;
             }
             font-weight: 300;
             margin-bottom: 20px;
@@ -82,8 +87,8 @@
         a {
             margin: 10px;
         }
-        
-      
+
+
 
         i {
             font-size: 1.25rem;
@@ -91,8 +96,8 @@
 
         }
 
-        i:hover{
-            color:$green;
+        i:hover {
+            color: $green;
         }
 
     }
