@@ -1,34 +1,33 @@
-
-html, body {
+html,
+body {
     width: 100%;
     height: auto;
     margin: 0;
-    overflow-x: hidden; 
-    
-        a {
+    overflow-x: hidden;
+
+    a {
         text-decoration: none;
         color: $reg;
- }
+    }
 
     li {
         list-style: none;
-     
+
     }
 
 }
 
 
 
-
 .container {
-    
-    max-width: 2000px;
+
+    max-width: 1440px;
     height: 100%;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
 
-    
+
     @mixin atLarge {
         padding: 0 85px;
         margin: 0 auto;
@@ -55,10 +54,10 @@ html, body {
     box-sizing: border-box;
     font-family: 'Roboto',
     sans-serif;
-     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-/*
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*
     * {
     background: #000 !important;
     color: #0f0 !important;
@@ -66,5 +65,4 @@ html, body {
 }
 
 */
-
 }

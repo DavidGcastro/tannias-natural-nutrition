@@ -27,7 +27,7 @@
 
         @mixin atMedium {
             font-size: .850rem;
-            padding-left: 12px;
+            padding-left: 10px;
             margin: 0 auto;
         }
 
