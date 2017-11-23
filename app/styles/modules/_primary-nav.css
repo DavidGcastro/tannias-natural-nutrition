@@ -1,21 +1,46 @@
 .primary-nav {
 
+    background: rgba(255, 255, 255, .9);
+    height: 100vh;
+    text-align: center;
+    
+    @mixin atMedium{
+ 
+        height: 100%;
+    }
+
     &--pull-right {
 
-        float: right;
+        @mixin atMedium {
+            float: right;
+        }
+
     }
 
     ul {
-        margin-top: 40px;
+        text-align: center;
+
+        transform: translateY(50%);
         padding: 0;
+
 
     }
 
 
 
     li {
-        float: left;
-        padding-top: 10px;
+        margin-bottom: 20px;
+        @mixin atMedium {
+            float: left;
+            padding-top: 35px;
+
+        }
+
+        @mixin atLarge {
+            padding-top: 30px;
+
+        }
+
 
     }
 
