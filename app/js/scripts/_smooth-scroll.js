@@ -3,21 +3,24 @@ $(document).ready(function () {
     //value of the top and parese that into an integer
     //then i hadd the height of the nav as detected by outerheight and add it with the value of my top
     var headerHeight = $(".site-header").outerHeight();
-    var headerTop = parseInt($('.site-header').css("top"),10);
+    var headerTop = parseInt($('.site-header').css("top"), 10);
     var trueHeight = headerHeight + headerTop;
-    
+    var content = document.getElementsByClassName("site-header--content");
+
 
     // when u click on a link in the nac
     $("nav li a ").on("click", function (e) {
-         $("nav li a").css("color", "#575756");
-         $(this).css("color", "#88c1ba")
-        
-        
+        $("nav li a").css("color", "#575756");
+        $(this).css("color", "#88c1ba")
+        $(content).slideUp(500, function () {
+            $(this).toggleClass("content-medium").css("display", "");
+        });
+
         var linkHref = $(this).attr('href');
         //clicked nav is equal to this, we set the href to a variable
-       
-        
-        
+
+
+
         $('html, body').animate({
             //we select the dom element that has the same id or class as the clicked anchors tags href
             scrollTop: $(linkHref).offset().top - trueHeight
