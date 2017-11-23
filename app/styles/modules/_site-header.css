@@ -6,7 +6,7 @@
     width: 100%;
     height: 80px;
 
-    
+
 
 
     @mixin atMedium {
@@ -19,7 +19,7 @@
         position: relative;
         top: 400px;
         text-align: center;
-     
+
 
         @mixin atMedium {
             float: right;
@@ -85,16 +85,18 @@
     }
 
 
-    &--content {
+    &--content {}
 
-          display: none;
-        @mixin atMedium {
-        
-            display: inline;
-        }
 
-    }
-    
+
 }
 
+.content-medium {
+     
+    display: none;
+    @mixin atMedium {
+        
+    display: inline;
 
+    }
+}
