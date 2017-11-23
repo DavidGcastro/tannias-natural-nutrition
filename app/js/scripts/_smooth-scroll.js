@@ -14,6 +14,7 @@ $(document).ready(function () {
         $(this).css("color", "#88c1ba")
         $(content).slideUp(500, function () {
             $(this).toggleClass("content-medium").css("display", "");
+
         });
 
         var linkHref = $(this).attr('href');

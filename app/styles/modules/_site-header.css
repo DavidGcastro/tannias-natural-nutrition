@@ -17,10 +17,9 @@
 
     &__btn-container {
         position: relative;
-        top:325px;
+        top: 325px;
         text-align: center;
-
-
+        /*        width: 100%;*/
         @mixin atMedium {
             float: right;
             margin-left: 30px;
@@ -84,19 +83,22 @@
 
     }
 
+    &--content {
+        
+             
+        @mixin atMedium {
+            display: inline;
+        }
 
-    &--content {}
-
-
+    }
 
 }
 
 .content-medium {
-     
-    display: none;
+     display: none;
     @mixin atMedium {
-        
-    display: inline;
-
+        display: inline;
     }
+
+
 }
