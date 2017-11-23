@@ -1,7 +1,7 @@
 .primary-nav {
 
     background: rgba(255, 255, 255, .9);
-    height: 50vh;
+    height: 60vh;
     text-align: center;
     
     @mixin atMedium{

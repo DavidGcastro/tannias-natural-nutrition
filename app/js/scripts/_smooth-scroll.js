@@ -8,7 +8,7 @@ $(document).ready(function () {
     var content = document.getElementsByClassName("site-header--content");
 
 
-    // when u click on a link in the nac
+    // when u click on a link in the nav
     $("nav li a ").on("click", function (e) {
         $("nav li a").css("color", "#575756");
         $(this).css("color", "#88c1ba")
