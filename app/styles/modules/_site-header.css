@@ -85,6 +85,9 @@
 
     &--content {
 
+    margin: 0 -20px;
+
+
         @mixin atMedium {
             display: inline;
         }
@@ -94,9 +97,10 @@
 }
 
 .content-medium {
-     display: none;
-      
-       @mixin atMedium {
+
+    display: none;
+
+    @mixin atMedium {
         display: inline;
     }
 
