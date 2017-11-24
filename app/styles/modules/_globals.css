@@ -4,6 +4,7 @@ body {
     height: auto;
     margin: 0;
     overflow-x: hidden;
+    position: relative;
 
     a {
         text-decoration: none;
@@ -17,6 +18,13 @@ body {
 
 }
 
+.bodyMobileOpen {
+
+    top: 400px;
+    @mixin atMedium{
+        top:0;
+    }
+}
 
 
 .container {

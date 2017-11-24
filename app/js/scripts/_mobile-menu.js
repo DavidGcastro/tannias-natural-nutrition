@@ -2,10 +2,20 @@
     var siteHeader = document.getElementsByClassName("site-header");
     var content = document.getElementsByClassName("site-header--content");
     var addMe = document.getElementsByClassName("content-medium");
+    var openNavHeight = $(content).outerHeight();
+
+
+    
+
 
 
     $(menuIcon).on("click", function () {
-        $(content).slideToggle(400, function () {
+
+        $("body").toggleClass("bodyMobileOpen", 500)
+
+
+        $(content).slideToggle(500, function () {
+
             $(this).toggleClass("content-medium").css("display", "");
         })
 
