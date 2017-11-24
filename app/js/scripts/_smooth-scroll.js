@@ -18,8 +18,6 @@
 //	}, 1000); //slow it down
 //	e.preventDefault(); //prevent the defualt fast scroll
 //});
-
-
 var headerHeight = $(".site-header").outerHeight();
 var headerTop = parseInt($('.site-header').css("top"), 10);
 var trueHeight = headerHeight + headerTop;
@@ -76,6 +74,9 @@ function onScroll(event) {
     $('nav li a ').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
+        //position: Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.
+        //.offset() method allows us to retrieve the current position of an element (specifically its border box, which excludes margins) relative to the document. Contrast this with .position(), which retrieves the current position relative to the offset parent. When positioning a new element on top of an existing one for global manipulation (in particular, for implementing drag-and-drop), .offset() is more useful.
+        //.offset() returns an object containing the properties top and left.
         if (refElement.position().top - trueHeight <= scrollPos && refElement.position().top + refElement.height() >
             scrollPos) {
             $('nav li a').removeClass("active");

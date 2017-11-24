@@ -9,12 +9,12 @@
 
 
 
-    $(menuIcon).on("click", function () {
 
-//        $("body").toggleClass("bodyMobileOpen", 500)
+    $(menuIcon).on("click", function () {
         $(content).slideToggle(500, function () {
-//            $("body").css("top", "");
             $(this).toggleClass("content-medium").css("display", "");
+            $("i",".icon").toggleClass("fa fa-bars").toggleClass("fa fa-times aria-hidden='true'");
         })
+
 
     });
