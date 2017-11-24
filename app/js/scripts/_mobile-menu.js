@@ -11,9 +11,9 @@
 
     $(menuIcon).on("click", function () {
 
-        $("body").toggleClass("bodyMobileOpen", 500)
+//        $("body").toggleClass("bodyMobileOpen", 500)
         $(content).slideToggle(500, function () {
-            $("body").toggleClass("bodyMobileOpen").css("top", "");
+//            $("body").css("top", "");
             $(this).toggleClass("content-medium").css("display", "");
         })
 

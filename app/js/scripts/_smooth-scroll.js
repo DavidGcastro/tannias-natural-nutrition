@@ -1,4 +1,3 @@
-
 //// when u click on a link in the nav
 //$("nav li a ").on("click", function(e) {
 //	$("nav li a").css("color", "#575756");
@@ -32,19 +31,18 @@ $(document).ready(function () {
     //smoothscroll
     //The off() method is most often used to remove event handlers attached with the on() method.
     $('nav li a').on('click', function (e) {
-      
-        $("nav li a").css("color", "#575756");
-        $(this).css("color", "#88c1ba");
+
+        $("nav li a").removeClass("active")
+        $(this).addClass("active")
         // stop the damn mobile nav behavior on 768 and above!
         var windowWidth = $(window).width();
         if (windowWidth < 768) {
             $(content).slideUp(500, function () {
                 $(this).toggleClass("content-medium").css("display", "");
-                
+
             });
         }
         // If this method is called, the default action of the event will not be triggered.
-        //		e.preventDefault();
         //As the .scroll() method is just a shorthand for .on( "scroll", handler ), detaching is possible using .off( "scroll" ).
         $(document).off("scroll");
         // Iterate over a jQuery object, executing a function for each matched element.
@@ -57,10 +55,15 @@ $(document).ready(function () {
         var target = this.hash,
             menu = target;
         $target = $(target);
-        //The stop() method stops the currently running animation for the selected elements.
+        //The stop() method stops df currently running animation for the selected elements.
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - trueHeight
         }, 500, 'swing', function () {
+            //window.location.href returns the href (URL) of the current page
+            //window.location.hostname returns the domain name of the web host
+            //window.location.pathname returns the path and filename of the current page
+            //window.location.protocol returns the web protocol used (http: or https:)
+            //window.location.assign loads a new document
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
