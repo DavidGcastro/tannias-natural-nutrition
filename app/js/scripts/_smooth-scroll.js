@@ -31,7 +31,7 @@ $(document).ready(function () {
     $(document).on("scroll", onScroll);
     //smoothscroll
     //The off() method is most often used to remove event handlers attached with the on() method.
-    $('a[href^="#"]').on('click', function (e) {
+    $('nav li a').on('click', function (e) {
       
         $("nav li a").css("color", "#575756");
         $(this).css("color", "#88c1ba");
@@ -40,6 +40,7 @@ $(document).ready(function () {
         if (windowWidth < 768) {
             $(content).slideUp(500, function () {
                 $(this).toggleClass("content-medium").css("display", "");
+                
             });
         }
         // If this method is called, the default action of the event will not be triggered.

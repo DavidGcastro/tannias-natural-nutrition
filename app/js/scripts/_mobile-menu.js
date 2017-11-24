@@ -5,17 +5,15 @@
     var openNavHeight = $(content).outerHeight();
 
 
-    
+
 
 
 
     $(menuIcon).on("click", function () {
 
         $("body").toggleClass("bodyMobileOpen", 500)
-
-
         $(content).slideToggle(500, function () {
-
+            $("body").toggleClass("bodyMobileOpen").css("top", "");
             $(this).toggleClass("content-medium").css("display", "");
         })
 
