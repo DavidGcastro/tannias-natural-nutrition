@@ -77,10 +77,6 @@
         font-weight: 300;
     
 
-        span{
-               transition: all 2s ease-in; 
-        }
-
         @mixin atMedium {
             display: none;
         }

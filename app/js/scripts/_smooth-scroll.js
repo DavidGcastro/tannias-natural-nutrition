@@ -29,7 +29,7 @@ $(document).ready(function () {
     //smoothscroll
     //The off() method is most often used to remove event handlers attached with the on() method.
     $('nav li a').on('click', function (e) {
-
+        $(".icon i").removeClass("fa fa-times").addClass("fa fa-bars")
         $("nav li a").removeClass("active")
         $(this).addClass("active")
         // stop the damn mobile nav behavior on 768 and above!
