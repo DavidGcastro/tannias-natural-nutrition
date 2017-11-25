@@ -1,23 +1,3 @@
-//// when u click on a link in the nav
-//$("nav li a ").on("click", function(e) {
-//	$("nav li a").css("color", "#575756");
-//	$(this).css("color", "#88c1ba");
-//	// stop the damn mobile nav behavior on 768 and above!
-//	var windowWidth = $(window).width();
-//	if (windowWidth < 768) {
-//		$(content).slideUp(500, function() {
-//			$(this).toggleClass("content-medium").css("display", "");
-//		});
-//	}
-//	var linkHref = $(this).attr('href');
-//	//clicked nav is equal to this, we set the href to a variable
-//	$('html, body').animate({
-//		//we select the dom element that has the same id or class as the clicked anchors tags href
-//		scrollTop: $(linkHref).offset().top - trueHeight
-//		//scroll to the element clicked, BUT get the coordinate of the divs top position minus the height of the nav, to prevent overlap
-//	}, 1000); //slow it down
-//	e.preventDefault(); //prevent the defualt fast scroll
-//});
 var headerHeight = $(".site-header").outerHeight();
 var headerTop = parseInt($('.site-header').css("top"), 10);
 var trueHeight = headerHeight + headerTop;
@@ -27,9 +7,9 @@ var content = document.getElementsByClassName("site-header--content");
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
     //smoothscroll
-    //The off() method is most often used to remove event handlers attached with the on() method.
     $('nav li a').on('click', function (e) {
-        $(".icon i").removeClass("fa fa-times").addClass("fa fa-bars")
+        //icon switch when clicking a link in the mobile menu
+        $("#icon > i").removeClass("fa fa-times").addClass("fa fa-bars")
         $("nav li a").removeClass("active")
         $(this).addClass("active")
         // stop the damn mobile nav behavior on 768 and above!
@@ -42,6 +22,8 @@ $(document).ready(function () {
         }
         // If this method is called, the default action of the event will not be triggered.
         //As the .scroll() method is just a shorthand for .on( "scroll", handler ), detaching is possible using .off( "scroll" ).
+     // The off() method is most often used to remove event handlers attached with the on() method.
+
         $(document).off("scroll");
         // Iterate over a jQuery object, executing a function for each matched element.
         $('a').each(function () {
@@ -53,7 +35,7 @@ $(document).ready(function () {
         var target = this.hash,
             menu = target;
         $target = $(target);
-        //The stop() method stops df currently running animation for the selected elements.
+        //The stop() method stops the currently running animation for the selected elements.
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - trueHeight
         }, 500, 'swing', function () {
@@ -70,7 +52,10 @@ $(document).ready(function () {
 
 
 function onScroll(event) {
+   // The scrollTop property sets or returns the number of pixels an element 's content is scrolled vertically.
+   // how many pixels from the top of the window
     var scrollPos = $(document).scrollTop();
+    // on each nav link
     $('nav li a ').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
