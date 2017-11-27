@@ -9,12 +9,17 @@ $(document).ready(function () {
     //smoothscroll
     $('nav li a').on('click', function (e) {
         //icon switch when clicking a link in the mobile menu
-        $("#icon > i").removeClass("fa fa-times").addClass("fa fa-bars")
+
+
         $("nav li a").removeClass("active")
         $(this).addClass("active")
         // stop the damn mobile nav behavior on 768 and above!
         var windowWidth = $(window).width();
         if (windowWidth < 768) {
+            $("#icon > i").removeClass("fa fa-times").addClass("fa fa-bars")
+
+
+
             $(content).slideUp(500, function () {
                 $(this).toggleClass("content-medium").css("display", "");
 
@@ -22,7 +27,7 @@ $(document).ready(function () {
         }
         // If this method is called, the default action of the event will not be triggered.
         //As the .scroll() method is just a shorthand for .on( "scroll", handler ), detaching is possible using .off( "scroll" ).
-     // The off() method is most often used to remove event handlers attached with the on() method.
+        // The off() method is most often used to remove event handlers attached with the on() method.
 
         $(document).off("scroll");
         // Iterate over a jQuery object, executing a function for each matched element.
@@ -52,8 +57,8 @@ $(document).ready(function () {
 
 
 function onScroll(event) {
-   // The scrollTop property sets or returns the number of pixels an element 's content is scrolled vertically.
-   // how many pixels from the top of the window
+    // The scrollTop property sets or returns the number of pixels an element 's content is scrolled vertically.
+    // how many pixels from the top of the window
     var scrollPos = $(document).scrollTop();
     // on each nav link
     $('nav li a ').each(function () {
