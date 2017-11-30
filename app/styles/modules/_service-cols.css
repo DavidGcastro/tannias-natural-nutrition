@@ -4,7 +4,6 @@
 
     &--wrapper {
 
-
         @mixin atLarge {
 
             width: 30%;
@@ -22,6 +21,8 @@
 
 
     &--container {
+   
+
         padding: 20px 0;
         width: 100%;
 
@@ -91,7 +92,7 @@
             display: inline-block;
         }
 
-    
+
 
 
 
@@ -108,7 +109,7 @@
             @mixin atMedium {
                 width: 400px;
             }
-         
+
         }
     }
 

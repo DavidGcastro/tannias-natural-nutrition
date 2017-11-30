@@ -3,6 +3,8 @@
     width: 100%;
 
 
+   
+
 
     &--textContainer {
         text-align: center;
@@ -51,58 +53,81 @@
     }
 
     &-multiTabs {
+
+
+
+       
         width: 100%;
         display: inline-block;
-        border-bottom: red 5px solid;
         padding-bottom: 20px;
         border-bottom: 1px #b5bcc5 solid;
         text-align: center;
-    }
 
 
-    .tab {
 
 
-        padding-bottom: 10px;
-        text-align: center;
-        width: 100%;
-        font-weight: 400;
-        color: $reg;
-        font-size: 1rem;
-        border-bottom: 5px solid #b5bcc5;
-        cursor: pointer;
-
-        @mixin atSmall {
-            margin-top: 10px;
-            padding-bottom: 12px;
-        }
+        .tab {
 
 
-        @mixin atMedium {
+            display: block;
+            margin-bottom: 20px;
 
-            margin-right: -3px;
-            padding: 15px 10px;
-            display: inline;
+            padding-bottom: 10px;
+            text-align: center;
+            width: 100%;
+            font-weight: 400;
+            color: $reg;
+            font-size: 1rem;
             border-bottom: 5px solid #b5bcc5;
 
 
-        }
 
-        &:hover {
-            border-bottom: 5px $green solid;
-            color: $green;
-            transition: all .3s ease-in-out;
+            @mixin atSmall {
+                margin-top: 10px;
+                padding-bottom: 12px;
+            }
+
 
             @mixin atMedium {
 
-                border-bottom: 5px solid $green;
+                margin-right: -3px;
+                padding: 15px 10px;
+                display: inline;
+                border-bottom: 5px solid #b5bcc5;
+
 
             }
+
+            &:hover {
+                border-bottom: 5px $green solid;
+                color: $green;
+                transition: all .3s ease-in-out;
+
+                @mixin atMedium {
+
+                    border-bottom: 5px solid $green;
+
+                }
+            }
+
+
+
         }
 
-
+        .activeTab {
+            color: $green;
+            border-color: $green;
+        }
 
     }
 
 
+
+
 }
+
+    /*    for tabs*/
+    .hidden {
+        display: none;
+        transition: all 1s ease-out;
+    }
