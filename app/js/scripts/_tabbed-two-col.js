@@ -13,6 +13,6 @@ $(tabs).on("click", function (e) {
     
     $(displayMe).siblings().addClass("hidden");
     
-    $(displayMe).fadeIn(1000).css("display", "").removeClass("hidden");
+    $(displayMe).fadeIn(300).css("display", "").removeClass("hidden");
 
 });

@@ -1,5 +1,11 @@
 .quote-block {
+
+
+
     &__innerContent {
+
+
+
         text-align: center;
 
         @mixin atMedium {
@@ -10,6 +16,11 @@
     }
 
     &__container {
+
+        .quoteHidden {
+            display: none;
+        }
+
         width: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -115,38 +126,30 @@
     }
 
     &__pagenation-bullets {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        bottom: 10px;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
 
         @mixin atMedium {
-            margin: 0;
-            bottom: -30%;
+            margin-top: 30px;
 
         }
 
 
-
-        ol {
-            margin: 0;
-            padding: 0;
+        a {
             display: inline-block;
-            li {
-                float: right;
-                cursor: pointer;
-                height: 10px;
-                width: 10px;
-                background-color: $green;
-                border: 2px $green solid;
-                margin: 2px;
-                border-radius: 50%;
-            }
-            .active {
-                background-color: transparent;
-            }
+            height: 10px;
+            width: 10px;
+            background-color: $green;
+            border: 2px $green solid;
+            margin: 2px;
+            border-radius: 50%;
+        }
+
+        .active {
+            background-color: transparent;
+            height: 13px;
+            width:13px;
         }
     }
-
 }
