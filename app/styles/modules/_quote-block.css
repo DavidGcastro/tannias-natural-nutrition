@@ -47,6 +47,7 @@
         img {
             margin: 0 15px;
             border-radius: 50%;
+            width: 128px;
 
             @mixin atMedium {
                 margin-right: 30px;

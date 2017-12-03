@@ -30,7 +30,7 @@
         }
         a i {
             padding: 10px;
-            color: $green;
+            color: $reg;
             
             @mixin atMedium{
                 font-size: 1.25rem;

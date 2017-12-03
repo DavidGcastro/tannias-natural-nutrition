@@ -114,6 +114,10 @@
         float: none;
         width: 100%;
         margin-bottom: 20px;
+        
+        @mixin atMedium{
+            margin-bottom: 40px;
+        }
 
         h1 {
             margin-top: 0;
@@ -194,11 +198,13 @@
     }
 
     &--imgContainer {
+        display: inline-block;
+        margin-bottom: 20px;
         .two-col-img {
             max-width: 100%;
             height: auto;
             float: none;
-
+            margin-bottom: 0;
 
         }
     }

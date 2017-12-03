@@ -15,6 +15,7 @@ $(document).ready(function () {
         $(this).addClass("active")
         // stop the damn mobile nav behavior on 768 and above!
         var windowWidth = $(window).width();
+
         if (windowWidth < 768) {
             $("#icon > i").removeClass("fa fa-times").addClass("fa fa-bars")
 
@@ -53,7 +54,30 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
+
+    // icon smooth scroll
+
+
+    $('#logoLink').on("click", function (e) {
+        var logoDest = this.hash;
+        $("nav li a ").removeClass("active")
+        $(logoDest).addClass('active')
+
+        $('html, body').animate({
+            'scrollTop': $(logoDest).offset().top - trueHeight
+
+        }, 500, 'swing')
+
+    })
+
 });
+
+
+
+
+
+
+
 
 
 function onScroll(event) {

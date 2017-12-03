@@ -80,7 +80,6 @@
 
     &--img-wrapper {
 
-        border-bottom: 6px solid #c4e1dd;
 
         @mixin atSmall {
             display: inline-block;

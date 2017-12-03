@@ -41,8 +41,7 @@
         &-title {
 
             .changeWord {
-
-
+                transition: all 300ms ease-in-out 1s;
             }
 
             padding-top: 0px;
@@ -132,9 +131,12 @@
         right: 0;
         bottom: 4%;
         font-size: 1rem;
-        color: white;
         display: none;
+        color: white;
 
+        a{
+            color:white;
+        }
         @mixin atSmall {
             display: block;
             font-size: 1.5rem;
