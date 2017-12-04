@@ -13,6 +13,8 @@ $(menuIcon).on("click", function () {
         $(this).toggleClass("content-medium").css("display", "");
         //icon switch
         $("i", "#icon").toggleClass("fa fa-bars").toggleClass("fa fa-times aria-hidden='true'");
+        
+        
     })
 
 
