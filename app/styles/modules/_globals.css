@@ -6,9 +6,12 @@ body {
     position: relative;
     overflow-x: hidden;
 
+
+
     .overFlow {
         overflow-y: hidden;
-    
+        position: fixed;
+
     }
 
 
